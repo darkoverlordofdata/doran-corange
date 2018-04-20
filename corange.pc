@@ -1,0 +1,16 @@
+# corange pkg-config source file
+
+prefix=/mingw64
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: corange
+Description: Corange game engine library.
+Version: 0.8.0
+Requires:
+Conflicts:
+Libs: -L${libdir}  -lmingw32 -lopengl32 -lSDL2main -lSDL2 -lSDL2_mixer -lSDL2_net
+Libs.private: -lSDL2main -lSDL2 -lSDL2_mixer -lSDL2_net -lopengl32
+Cflags: -I${includedir}/Corange
+

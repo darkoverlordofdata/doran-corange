@@ -1,0 +1,16 @@
+{
+  "name": "corange",
+  "authors": [
+    "Bruce Davidson <darkoverlordofdata@gmail.com>"
+  ],
+  "description": "Corange",
+  "main": "CMakeLists.txt",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
