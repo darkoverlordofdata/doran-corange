@@ -31,6 +31,7 @@ int graphics_get_antialiasing();
 void graphics_viewport_set_title(const char* title);
 void graphics_viewport_set_icon(fpath icon);
 void graphics_viewport_set_position(int x, int y);
+void graphics_viewport_set_rect(int x, int y, int w, int h);
 void graphics_viewport_set_size(int w, int h);
 void graphics_viewport_screenshot();
 

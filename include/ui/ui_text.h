@@ -61,6 +61,11 @@ typedef struct {
   
 } ui_text;
 
+/*
+** == declare delegates for Vala interop ==
+*/
+typedef void (*ui_text_onselect)(ui_text*);
+
 ui_text* ui_text_new();
 ui_text* ui_text_new_string(char* string);
 void ui_text_delete(ui_text* text);

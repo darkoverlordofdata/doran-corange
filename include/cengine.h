@@ -33,6 +33,15 @@
 #include <SDL2/SDL_net.h>
 #include "SDL2/SDL_local.h"
 
+/*
+** == Compact object for Vala interop ==
+*/
+typedef void* CObject;
+/*
+** == dummy free for Vala interop ==
+*/
+static void override_free(void* obj) {}
+
 #ifndef MAX_PATH
 #define MAX_PATH 512
 #endif

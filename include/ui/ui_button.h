@@ -28,6 +28,13 @@ typedef struct ui_button {
   bool pressed;
 } ui_button;
 
+
+/*
+** == declare delegates for Vala interop ==
+*/
+typedef void (*ui_button_onclick)(ui_button*, void*);
+
+
 ui_button* ui_button_new();
 void ui_button_delete(ui_button* b);
 

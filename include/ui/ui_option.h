@@ -12,6 +12,11 @@ typedef struct ui_option {
   void (*onselect)(struct ui_option*);
 } ui_option;
 
+/*
+** == declare delegates for Vala interop ==
+*/
+typedef void (*ui_option_onselect)(ui_option*);
+
 ui_option* ui_option_new(void);
 void ui_option_delete(ui_option* o);
 
